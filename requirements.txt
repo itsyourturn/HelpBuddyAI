@@ -1,0 +1,36 @@
+# Core framework dependencies
+streamlit>=1.28.0
+langgraph>=0.0.60
+langchain>=0.1.0
+langchain-google-genai>=0.0.8
+langchain-community>=0.0.10
+langsmith>=0.0.69
+
+# Vector database and document processing
+chromadb>=0.4.15
+langchain-chroma>=0.1.0
+pypdf>=3.17.0
+
+# Environment and configuration
+python-dotenv>1.0.0
+
+# Audio processing dependencies
+SpeechRecognition>=3.10.0
+pydub>=0.25.1
+
+# Image processing
+pillow>=10.0.0
+
+# Streamlit extensions
+streamlit-mic-recorder>=0.0.5
+
+# Google API clients
+google-generativeai>=0.3.0
+
+# Utilities
+tiktoken>=0.5.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Additional dependencies for audio processing on windows
+pyaudio>=0.2.11; sys_platform == "win32"

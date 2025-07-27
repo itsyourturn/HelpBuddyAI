@@ -65,6 +65,9 @@ db.sqlite3-journal
 instance/
 .webassets-cache
 
+# ChromaDB vector database
+chroma_db/
+
 # Scrapy stuff:
 .scrapy
 
@@ -205,3 +208,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ignore log files but keep the logs/ directory
+logs/
+!logs/.gitkeep
+logs/*.log
