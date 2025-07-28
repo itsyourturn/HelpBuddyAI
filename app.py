@@ -214,8 +214,8 @@ def main():
         - Google Gemini 2.5+
         - NCERT Science class 8
         - Advanced Guardrails
-        - LangGraph Agents
-        - LangSmith Monitoring
+        - LangChain Agent Framework
+        - LangSmith Monitoring (Optional)
         """)
 
         st.markdown('</div>', unsafe_allow_html=True)

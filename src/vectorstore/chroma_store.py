@@ -135,34 +135,6 @@ class ChromaStore:
             logger.error(f"Error indexing PDF: {str(e)}")
             logger.exception("Detailed error trace:")
             return False
-
-            # Add metadata to chunks
-            for i, text in enumerate(texts):
-                text.metadata.update({
-                    "source": "NCERT Science Class 8",
-                    "chunk_id": i,
-                    "total_chunks": len(texts),
-                    "subject": "Science",
-                    "class": "8",
-                    "board": "NCERT"
-                })
-
-            # Create vectorstore
-            logger.info("Creating vector store...")
-            self.vectorstore = Chroma.from_documents(
-                documents=texts,
-                embedding=self.embeddings,
-                client=self.client,
-                collection_name=self.collection_name,
-                persist_directory=self.settings.CHROMA_PERSIST_DIR
-            )
-
-            logger.info("PDF indexed successfully!")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Error indexing PDF: {str(e)}")
-            return False
     
     def similarity_search(
             self,

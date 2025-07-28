@@ -1,5 +1,5 @@
 """
-HelpBuddy AI Agent - LangGraph-based chatbot for NCERT Science Class 8
+HelpBuddy AI Agent - LangChain-based chatbot for NCERT Science Class 8
 """
 
 import logging

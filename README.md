@@ -33,7 +33,7 @@ HelpBuddy AI is an intelligent educational assistant specifically designed to he
 
 - **Core AI**:
   - Google Gemini 2.0 Flash Exp for natural language processing
-  - LangGraph for agent workflow management
+  - LangChain for agent workflow and tool integration
   - LangSmith for monitoring and tracking
 
 - **Backend & Storage**:
@@ -200,6 +200,24 @@ HelpBuddyAI/
 - Image processing with base64 encoding for multimodal AI
 - Memory cleanup and age-based expiration
 
+## Architecture Overview
+
+HelpBuddy AI uses a **traditional LangChain agent pattern** with the following components:
+
+- **HelpBuddyAgent**: Main agent class that orchestrates all functionality
+- **ChromaStore**: Vector database management for knowledge retrieval
+- **ContentFilter**: Safety and content filtering mechanisms
+- **ImageProcessor**: Multimodal AI processing for image analysis
+- **MemoryManager**: Conversation history and context management
+- **AudioProcessor**: Speech-to-text processing capabilities
+
+The agent follows a **sequential workflow** where each query is processed through multiple stages:
+1. Input validation and preprocessing
+2. Context retrieval from vector store
+3. Response generation using Gemini AI
+4. Content filtering and safety checks
+5. Memory management and history updates
+
 ## Troubleshooting
 
 ### Common Issues
@@ -247,6 +265,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - NCERT for the Science Class 8 curriculum
 - Google for Gemini AI technology and text-embedding-004
 - Streamlit for the web framework
-- LangChain community for LangGraph and tools
+- LangChain community for agent framework and tools
 - ChromaDB for vector storage capabilities
 - Streamlit-mic-recorder for audio input functionality

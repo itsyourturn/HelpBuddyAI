@@ -30,7 +30,8 @@ def setup_logging():
     # Set specific logger levels
     logging.getLogger("chromadb").setLevel(logging.WARNING)
     logging.getLogger("httpx").setLevel(logging.WARNING)
-    logging.getLogger("openai").setLevel(logging.WARNING)
+    logging.getLogger("google.generativeai").setLevel(logging.WARNING)
+    logging.getLogger("langchain_google_genai").setLevel(logging.WARNING)
 
     logger = logging.getLogger(__name__)
     logger.info("Logging configured for HelpBuddy AI")
