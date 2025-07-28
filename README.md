@@ -2,6 +2,100 @@
 
 HelpBuddy AI is an intelligent educational assistant specifically designed to help students understand NCERT Science Class 8 concepts. It uses advanced AI technologies to provide clear, accurate, and age-appropriate explanations for scientific concepts through multiple input methods.
 
+## Use Case Overview
+
+### **Primary Use Case: Educational AI Assistant**
+HelpBuddy AI serves as an intelligent study companion for **NCERT Science Class 8 students** (ages 13-14), providing personalized learning support through multiple interaction modalities.
+
+### **Target Users:**
+- **Students**: NCERT Science Class 8 students seeking homework help and concept clarification
+- **Educators**: Teachers looking for supplementary teaching tools
+- **Parents**: Guardians wanting to support their children's science education
+
+### **Learning Scenarios:**
+- **Homework Assistance**: Getting help with science assignments and problems
+- **Exam Preparation**: Reviewing concepts and practicing questions
+- **Concept Clarification**: Understanding difficult scientific topics
+- **Visual Learning**: Learning through diagrams, charts, and images
+- **Auditory Learning**: Learning through voice interactions
+
+## Problem Statement
+
+### **Core Problems:**
+
+1. **Limited Access to Personalized Learning Support**
+   - Students often struggle to get immediate help with science concepts
+   - Traditional tutoring is expensive and not always available
+   - Teachers have limited time for individual student support
+
+2. **Difficulty in Understanding Complex Scientific Concepts**
+   - Abstract scientific concepts are hard to visualize
+   - Students need multiple explanations and examples
+   - Language barriers and technical terminology confusion
+
+3. **Lack of Interactive Learning Methods**
+   - Traditional textbooks are static and one-dimensional
+   - Students learn differently (visual, auditory, textual)
+   - Limited engagement with learning materials
+
+4. **Inconsistent Quality of Educational Content**
+   - Internet sources may be unreliable or inappropriate
+   - Content may not be age-appropriate
+   - Information may not align with curriculum standards
+
+5. **Limited Context-Aware Learning Support**
+   - No memory of previous interactions
+   - Inability to handle follow-up questions
+   - Lack of personalized learning paths
+
+## Solution Architecture
+
+### **1. Multi-Modal Learning Interface**
+
+**Problem**: Students have different learning preferences and needs
+**Solution**: Three input methods for maximum accessibility
+
+- **Text-based learning**: Direct question typing for detailed explanations
+- **Voice-based learning**: Speech-to-text for students with typing difficulties
+- **Visual learning**: Image upload and analysis for diagrams/charts
+
+### **2. Intelligent Knowledge Base**
+
+**Problem**: Unreliable and non-curriculum-aligned information sources
+**Solution**: Vectorized NCERT textbook with semantic search
+
+- **ChromaDB Vector Store**: PDF indexing of NCERT Science Class 8 textbook
+- **Semantic Search**: Using Google's text-embedding-004 for context-aware retrieval
+- **Curriculum Alignment**: Ensures all content matches NCERT standards
+
+### **3. Context-Aware Conversation Management**
+
+**Problem**: No memory of previous interactions or learning context
+**Solution**: Advanced memory management system
+
+- **Conversation History**: Timestamped interaction tracking
+- **Follow-up Detection**: Intelligent recognition of related questions
+- **Context Retrieval**: Relevant information from previous sessions
+- **Memory Cleanup**: Age-based conversation management
+
+### **4. Safety and Quality Assurance**
+
+**Problem**: Inappropriate or inaccurate content exposure
+**Solution**: Multi-layered content filtering
+
+- **Educational Scope Validation**: Ensures questions are within curriculum
+- **Age-Appropriate Filtering**: Content suitable for 13-14 year olds
+- **Safety Checks**: Comprehensive response validation
+
+### **5. Personalized Learning Experience**
+
+**Problem**: One-size-fits-all approach doesn't work for all students
+**Solution**: Adaptive response generation
+
+- **Age-Appropriate Explanations**: Tailored for 13-14 year old students
+- **Multiple Explanation Styles**: Different approaches for different learners
+- **Progressive Complexity**: Building understanding step by step
+
 ## Features
 
 - **Multiple Input Methods**:
